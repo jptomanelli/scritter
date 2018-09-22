@@ -1,0 +1,16 @@
+{
+  "name": "scritter",
+  "version": "1.0.0",
+  "description": "Scrape public twitter accounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Paul Tomanelli II",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.22.2",
+    "progress": "^2.0.0",
+    "puppeteer": "^1.8.0"
+  }
+}
