@@ -13,7 +13,7 @@ npm install --save scritter
 ###Basic
 ```javascript
 const Scritter = require('scritter'),
-    fs = require('fs);
+    fs = require('fs');
 (async (username) => {
     const s = new Scritter({ 
         downloadDir: `${__dirname}`     //  Where to save JSON

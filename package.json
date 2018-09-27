@@ -1,13 +1,13 @@
 {
   "name": "scritter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scrape public twitter accounts",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Paul Tomanelli II",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "moment": "^2.22.2",
