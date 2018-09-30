@@ -10,35 +10,31 @@ npm install --save scritter
 
 ## Usage
 
-###Basic
+### Basic
 ```javascript
 const Scritter = require('scritter'),
     fs = require('fs');
-(async (username) => {
+(async () => {
     const s = new Scritter({ 
-        downloadDir: `${__dirname}`     //  Where to save JSON
+        downloadDir: `${__dirname}/data/`   //  Where to save JSON (required)
     });
     
-    if (!fs.existsSync(dir)){
-        fs.mkdirSync(dir);              //  Create a for username data
-    }
-
     await s.scrape({
-        from: username                  //  Scrape user profile
+        from: username                      //  Scrape user profile
     });
 
 })();
 ```
 
-###Options
+### Options
 
 ```javascript
 //  Default
 const s = new Scritter({ 
-    l: 'en',
     url: 'https://twitter.com/search',
     src: 'typd',
-    downloadDir: '/'
+    l: '',                      //  Language 
+    downloadDir: `~/Downloads/` //  Where JSON will be downloaded
 });
 await s.scrape({
     from: username,             //  From
