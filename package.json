@@ -1,6 +1,6 @@
 {
   "name": "scritter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Scrape public twitter accounts",
   "main": "index.js",
   "scripts": {
